@@ -43,6 +43,10 @@ h2, h3 {
     width: 100%;
 }
 
+#menu {
+    display: none;
+}
+
 #nav-links {
     display: flex;
     justify-content: space-evenly;
@@ -301,4 +305,102 @@ footer > p {
         grid-template-columns: 230px 230px;
         grid-template-rows: 230px 230px 230px;
     }
-  }
+}
+
+@media screen and (max-width: 700px) {
+    #nav-links {
+        display: none;
+    }
+    
+    #menu {
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+
+    #menu > img {
+        width: 60px;
+    }
+
+    #title, main {
+        margin: 0 50px;
+    }
+
+    .grid-container {
+        justify-items: center;
+    }
+
+    #about-info {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 200px;
+        column-gap: 0px;
+    }
+
+    #profile-photo > img {
+        justify-self: center;
+    }
+
+    #experience {
+        padding-left: 0px;
+    }
+
+    #work {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50px 200px;
+        row-gap: 30px;
+        padding-bottom: 50px;
+        font-size: 0.8em;
+    }
+
+    .work-button:nth-child(1) {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    
+    .work-button:nth-child(2) {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    
+    .work-button:nth-child(3) {
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
+    
+    .work-button:nth-child(4) {
+        grid-row-start: 1;
+        grid-column-start: 4;
+    }
+
+    #bfm, #jmu, #chesterfield, #amelia {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    #certifications > h2
+    {
+        text-align: center;
+    }
+
+    #cert {
+        display: grid;
+        grid-template-columns: 120px 120px 120px;
+        grid-template-rows: 164px;
+    }
+
+    #cert > figure {
+        grid-column-start: 2;
+    }
+
+    #projects {
+        padding-left: 0px;
+    }
+
+    #project-info {
+        grid-template-columns: 230px;
+        grid-template-rows: 230px 230px 230px 230px;
+    }
+}

@@ -87,10 +87,6 @@ h2, h3 {
     border-radius: 50%;
 }
 
-#profile-photo > img:hover {
-    content: url("images/profile-photo.png");
-}
-
 /* Experience */
 #experience {
     padding-left: 10%;

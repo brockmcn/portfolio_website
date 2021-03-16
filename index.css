@@ -10,6 +10,10 @@ body {
     row-gap: 50px;
 }
 
+#title {
+    padding-top: 100px;
+}
+
 #title, main {
     margin: 0 100px;
 }
@@ -36,6 +40,9 @@ h2, h3 {
     align-items: center;
     display: grid;
     color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #nav-bar > a:nth-child(n+2) {
@@ -287,3 +294,10 @@ footer > p {
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 920px) {
+    #project-info {
+        grid-template-columns: 230px 230px;
+        grid-template-rows: 230px 230px 230px;
+    }
+  }

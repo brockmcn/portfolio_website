@@ -34,22 +34,25 @@ h2, h3 {
 /* Navigation bar */
 #nav-bar {
     background-color: rgb(50, 50, 50);
-    grid-template-rows: 75px;
-    grid-template-columns: 25% 15% 15% 15% 15% 15%;
-    justify-items: center;
-    align-items: center;
     display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80px;
     color: white;
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-#nav-bar > a:nth-child(n+2) {
+#nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nav-links > a {
     display: flex;
     align-items: center;
     height: 100%;
-    width: 100%;
     text-decoration: none;
     color: white;
 }
@@ -59,20 +62,18 @@ h2, h3 {
     text-align: center;
 }
 
-#nav-bar > a:hover {
+#nav-links > a:hover {
     color: turquoise;
 }
 
 .nav-img {
     height: 80%;
     align-self: center;
-    justify-self: start;
+    padding-left: 10px;
 }
 
 #logo {
-    height: 90%;
-    align-self: center;
-    padding-left: 20px;
+    height: 100%;
 }
 
 /* About */

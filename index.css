@@ -242,13 +242,13 @@ ul {
 
 #contact-info {
     display: grid;
-    grid-template-columns: 40px 40px 40px 40px;
+    grid-template-columns: 40px 40px;
     grid-template-rows: 40px 50px;
 }
 
 #contact-info > p {
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 3;
     align-self: center;
 }
 
@@ -268,16 +268,7 @@ ul {
     content: url('images/github-icon.png');
 }
 
-#instagram-icon:hover {
-    content: url('images/instagram-icon.png');
-}
-
-#facebook-icon:hover {
-    content: url('images/facebook-icon.png');
-}
-
 /* Footer */
-
 footer {
     color: rgb(50, 50, 50);
 }

@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    background-color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.grid-container {
+    display: grid;
+    color: white;
+    row-gap: 50px;
+}
+
+#title, main {
+    margin: 0 100px;
+}
+
+h1 {
+    color: turquoise;
+    margin-bottom: 0;
+}
+
+#title > h2 {
+    margin-top: 0;
+}
+
+h2, h3 {
+    color: turquoise;
+}
+
+/* Navigation bar */
+#nav-bar {
+    background-color: rgb(50, 50, 50);
+    grid-template-rows: 75px;
+    grid-template-columns: 36% 16% 16% 16% 16%;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    color: turquoise;
+}
+
+.nav-img {
+    height: 80%;
+    align-self: center;
+    justify-self: start;
+}
+
+#logo {
+    height: 100%;
+    align-self: center;
+    padding-left: 20px;
+}
+
+/* About */
+#about-info {
+    display: grid;
+    grid-template-columns: 50% 30%;
+    column-gap: 10px;
+}
+
+#about > h2 {
+    margin-bottom: 0;
+}
+
+#profile-photo {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+#profile-photo > img {
+    justify-self: flex-start;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#profile-photo > img:hover {
+    content: url("images/profile-photo.png");
+}
+
+/* Experience */
+#experience {
+    padding-left: 10%;
+}
+
+#work {
+    height: 230px;
+    display: grid;
+    grid-template-columns: 30% 50%;
+    grid-template-rows: 50px 50px 50px 50px;
+    row-gap: 10px;
+    column-gap: 20px;
+    padding-bottom: 50px;
+}
+
+.work-header {
+    margin: 0;
+}
+
+.work-date {
+    margin-top: 1px;
+}
+
+ul {
+    padding-left: 16px;
+    list-style: square;
+}
+
+.work-button {
+    border: none;
+    border-left: 2px solid turquoise;
+    background-color: transparent;
+    color: turquoise;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.work-button:hover {
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+}
+
+.work-button:focus {
+    outline: none;
+}
+
+.work-button:nth-child(1) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+.work-button:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.work-button:nth-child(3) {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+.work-button:nth-child(4) {
+    grid-row-start: 4;
+    grid-column-start: 1;
+}
+
+#jmu, #chesterfield, #amelia {
+    display: none;
+}
+
+/* Certifications */
+#certifications {
+    height: 250px;
+}
+
+#cert {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px;
+    grid-template-rows: 164px;
+}
+
+#cert > figure {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#cert > figure > figcaption {
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cert-img {
+    width: 120px;
+}
+
+/* Projects */
+#projects {
+    padding-left: 10%;
+}
+
+#project-info {
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+    grid-template-rows: 230px 230px;
+    gap: 20px 20px;
+}
+
+#project-info > a {
+    text-decoration: none;
+}
+
+.project {
+    height: 100%;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 15%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 25% 75%;
+}
+
+.project > h3 {
+    text-align: center;
+}
+
+.project > img {
+    height: 75%;
+    grid-column-start: 2;
+    align-self: center;
+}
+
+.project > p {
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 0.9em;
+}
+
+/* Contact */
+#contact > h2 {
+    margin-bottom: 0;
+}
+
+#contact-info {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    grid-template-rows: 40px 50px;
+}
+
+#contact-info > p {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    align-self: center;
+}
+
+#contact-info > a {
+    height: 100%;
+}
+
+#contact-info > a > img {
+    height: 100%;
+}
+
+#linkedin-icon:hover {
+    content: url('images/linkedin-icon.png');
+}
+
+#github-icon:hover {
+    content: url('images/github-icon.png');
+}
+
+#instagram-icon:hover {
+    content: url('images/instagram-icon.png');
+}
+
+#facebook-icon:hover {
+    content: url('images/facebook-icon.png');
+}
+
+/* Footer */
+
+footer {
+    color: rgb(50, 50, 50);
+}
+
+footer > p {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

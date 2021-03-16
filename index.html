@@ -1,16 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Brockton McNerney</title>
 </head>
+
 <body>
     <header>
-        <h1>
-            Test
-        </h1>
+        <div id="nav-bar">
+            <a href="" class="nav-img"><img id="logo" src="images/bm_logo.png" alt="Logo"></a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div id="title">
+            <h1>Brockton McNerney</h1>
+            <h2>Software Engineer</h2>
+        </div>
     </header>
+    <main>
+        <div class="grid-container">
+            <div id="about">
+                <h2>About</h2>
+                <div id="about-info">
+                    <div id="about-text">
+                        <p>Hello! I'm Brockton, a software engineer based in Northern VA.</p>
+
+                        <p>I enjoy developing games, websites, and all sorts of software.</p>
+
+                        <p>After graduating James Madison University I became a contract game developer and I am
+                            currently
+                            looking for full-time work.</p>
+
+                        <p>Here are a few technologies I've been working with recently:</p>
+
+                        <p>C# SQL HTML/CSS JavaScript Cloud Computing</p>
+                    </div>
+                    <div id="profile-photo">
+                        <img src="images/profile-photo-tinted.png" alt="Profile photo">
+                    </div>
+                </div>
+            </div>
+            <div id="experience">
+                <h2>Experience</h2>
+                <div id="work">
+                    <button class="work-button" onclick="toggleBfm()">BFM Studios</button>
+                    <button class="work-button" onclick="toggleJmu()">JMU Bookstore</button>
+                    <button class="work-button" onclick="toggleChesterfield()">Chesterfield County Government</button>
+                    <button class="work-button" onclick="toggleAmelia()">Amelia County Public Schools</button>
+                    <div id="bfm">
+                        <h3 class="work-header">Unity Developer</h3>
+                        <p class="work-date">December 2020 - Present</p>
+                        <ul>
+                            <li>Leading conversion of serial object oriented project to multi-threaded data oriented
+                                project using Unity DOTS</li>
+                            <li>Building prototype mobile games using C# for production and release on app stores</li>
+                            <li>Developed a tool to convert 3D models into 2D playable characters with animations during
+                                runtime</li>
+                        </ul>
+                    </div>
+                    <div id="jmu">
+                        <h3 class="work-header">Computer Sales and Repair Associate</h3>
+                        <p class="work-date">October 2019 - March 2020</p>
+                        <ul>
+                            <li>Interfaced directly with bookstore clients and sold 50+ devices, utilizing Apple sales
+                                training</li>
+                            <li>Ran diagnostics on 250+ computers for repair check-ins</li>
+                        </ul>
+                    </div>
+                    <div id="chesterfield">
+                        <h3 class="work-header">Cybersecurity Intern</h3>
+                        <p class="work-date">May 2019 - July 2019</p>
+                        <ul>
+                            <li>Developed Information Security Awareness training materials, accessed by 100+ in first
+                                week</li>
+                            <li>Mapped information security controls and regulatory requirements to compliance
+                                assessment</li>
+                        </ul>
+                    </div>
+                    <div id="amelia">
+                        <h3 class="work-header">Volunteer Mentor</h3>
+                        <p class="work-date">February 2017 - May 2017</p>
+                        <ul>
+                            <li>Taught introduction to programming course to 40 middle and high school students for
+                                Technovation as a mentor for women in technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="certifications">
+                <h2>Certifications</h2>
+                <div id="cert">
+                    <figure>
+                        <img class="cert-img" src="images/AWS-CloudPractitioner-2020.png"
+                            alt="AWS Cloud Practitioner Certification">
+                        <figcaption>Scored 93%</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div id="projects">
+                <h2>Projects</h2>
+                <div id="project-info">
+                    <a href="https://github.com/nickalbright97/BubbleSort" target="_blank">
+                        <div class="project">
+                            <h3>Analysis of Soft Complex Materials</h3>
+                            <img src="images/magnifier-icon.png" alt="Magnifier Icon">
+                            <p>Check out how I converted a program to C and that ultimately reduced runtime from 1 hour
+                                to 10 seconds.</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/brockmcn/machine-learning/tree/main/CS445_PA3" target="_blank">
+                        <div class="project">
+                            <h3>Digit Recognition with Keras</h3>
+                            <img src="images/machine-icon.png" alt="Machine Learning Icon">
+                            <p>A python machine learning project where I analyzed the efficiency of Dense and CNN models.</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/brockmcn/project2-frontend" target="_blank">
+                        <div class="project">
+                            <h3>Trip Planning Web App</h3>
+                            <img src="images/plane-icon.png" alt="Plane Icon">
+                            <p>A full-stack traveling web application created with React.js, SQL, and more.</p>
+                        </div>
+                    </a>
+                    <a href="https://www.kongregate.com/games/mrturnup420/rolling-ball-adventure?acomplete=rolling+ball+adventure" target="_blank">
+                        <div class="project">
+                            <h3>Rolling Ball Adventure</h3>
+                            <img src="images/controller-icon.png" alt="Controller Icon">
+                            <p>Play this web game I made in a 1-day game jam!</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/brockmcn/youtube_media_player" target="_blank">
+                        <div class="project">
+                            <h3>Quick-Search Media Player</h3>
+                            <img src="images/youtube-icon.png" alt="Youtube Icon">
+                            <p>A media player app using C++ that automatically plays your searched video on YouTube.</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/brockmcn/mars_rovers" target="_blank">
+                        <div class="project">
+                            <h3>NASA Mars Rovers</h3>
+                            <img src="images/robot-icon.png" alt="Robot Icon">
+                            <p>A C# program that receives NASA instructions to direct a rover on Mars!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="contact">
+                <h2>Contact</h2>
+                <div id="contact-info">
+                    <p>brockmcn@gmail.com</p>
+                    <a href="https://www.linkedin.com/in/brockton-mcnerney-583baa182/" target="_blank"><img
+                            id="linkedin-icon" src="images/linkedin-icon-highlighted.png" alt="LinkedIn Icon"></a>
+                    <a href="https://github.com/brockmcn/" target="_blank"><img id="github-icon"
+                            src="images/github-icon-highlighted.png" alt="Github Icon"></a>
+                    <a href="https://www.instagram.com/brockmcn/" target="_blank"><img id="instagram-icon"
+                            src="images/instagram-icon-highlighted.png" alt="Instagram Icon"></a>
+                    <a href="https://www.facebook.com/brock.mcnerney.96/" target="_blank"><img id="facebook-icon"
+                            src="images/facebook-icon-highlighted.png" alt="Facebook Icon"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Designed by Brockton McNerney</p>
+    </footer>
 </body>
+
 </html>

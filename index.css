@@ -14,7 +14,7 @@ body {
     padding-top: 100px;
 }
 
-#title, main {
+#title, main, footer {
     margin: 0 100px;
 }
 
@@ -117,10 +117,16 @@ h2, h3 {
     height: 230px;
     display: grid;
     grid-template-columns: 30% 50%;
-    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-rows: 200px;
     row-gap: 10px;
     column-gap: 20px;
     padding-bottom: 50px;
+}
+
+#work-places {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .work-header {
@@ -153,26 +159,6 @@ ul {
 
 .work-button:focus {
     outline: none;
-}
-
-.work-button:nth-child(1) {
-    grid-row-start: 1;
-    grid-column-start: 1;
-}
-
-.work-button:nth-child(2) {
-    grid-row-start: 2;
-    grid-column-start: 1;
-}
-
-.work-button:nth-child(3) {
-    grid-row-start: 3;
-    grid-column-start: 1;
-}
-
-.work-button:nth-child(4) {
-    grid-row-start: 4;
-    grid-column-start: 1;
 }
 
 #jmu, #chesterfield, #amelia {
@@ -264,13 +250,7 @@ ul {
 #contact-info {
     display: grid;
     grid-template-columns: 40px 40px;
-    grid-template-rows: 40px 50px;
-}
-
-#contact-info > p {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    align-self: center;
+    grid-template-rows: 50px;
 }
 
 #contact-info > a {
@@ -323,7 +303,7 @@ footer > p {
         width: 60px;
     }
 
-    #title, main {
+    #title, main, footer {
         margin: 0 50px;
     }
 
@@ -333,9 +313,13 @@ footer > p {
 
     #about-info {
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 90%;
         grid-template-rows: 350px 200px;
         column-gap: 0px;
+    }
+
+    #about-text > p {
+        text-align: left;
     }
 
     #profile-photo > img {
@@ -347,32 +331,20 @@ footer > p {
     }
 
     #work {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        display: grid;    
+        grid-template-columns: 80%;
         grid-template-rows: 50px 200px;
         row-gap: 30px;
         padding-bottom: 50px;
-        font-size: 0.8em;
     }
 
-    .work-button:nth-child(1) {
-        grid-row-start: 1;
-        grid-column-start: 1;
+    #work-places {
+        flex-direction: row;
+        justify-content: space-between;
     }
-    
-    .work-button:nth-child(2) {
-        grid-row-start: 1;
-        grid-column-start: 2;
-    }
-    
-    .work-button:nth-child(3) {
-        grid-row-start: 1;
-        grid-column-start: 3;
-    }
-    
-    .work-button:nth-child(4) {
-        grid-row-start: 1;
-        grid-column-start: 4;
+
+    .work-date {
+        text-align: left;
     }
 
     #bfm, #jmu, #chesterfield, #amelia {
@@ -380,8 +352,7 @@ footer > p {
         grid-column-end: 5;
     }
 
-    #certifications > h2
-    {
+    #certifications > h2 {
         text-align: center;
     }
 
@@ -399,8 +370,32 @@ footer > p {
         padding-left: 0px;
     }
 
+    #projects > h2 {
+        text-align: center;
+    }
+
     #project-info {
         grid-template-columns: 230px;
-        grid-template-rows: 230px 230px 230px 230px;
+        grid-template-rows: 230px 230px 230px 230px 230px 230px;
+    }
+
+    #contact {
+        width: 100%;
+    }
+
+    #contact > h2, p {
+        text-align: center;
+    }
+
+    #contact-info {
+        justify-content: center;
+    }
+
+    #contact-info > a > img {
+        align-self: flex-start;
+    }
+
+    footer {
+        width: 100%;
     }
 }

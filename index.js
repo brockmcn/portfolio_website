@@ -1,7 +1,23 @@
-window.onload = function() {
+window.onload = function () {
     clearWork();
     bfm.style.display = "block";
-  };
+    toggleMenu();
+};
+
+function toggleMenu() {
+    var children = document.getElementById("menu-bar").children;
+
+    if (children[0].style.display == "none") {
+        for (var i = 0; i < children.length; i++) {
+            children[i].style.display = "block";
+        }
+    } else {
+        for (var i = 0; i < children.length; i++) {
+            children[i].style.display = "none";
+        }
+    }
+
+}
 
 function clearWork() {
     var bfm = document.getElementById("bfm");
@@ -32,7 +48,7 @@ function toggleJmu() {
 
 function toggleChesterfield() {
 
-    var work = document.getElementById("work");   
+    var work = document.getElementById("work");
 
     if (chesterfield.style.display == "none") {
         clearWork();
@@ -42,7 +58,7 @@ function toggleChesterfield() {
 
 function toggleAmelia() {
 
-    var work = document.getElementById("work");   
+    var work = document.getElementById("work");
 
     if (amelia.style.display == "none") {
         clearWork();

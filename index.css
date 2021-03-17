@@ -45,6 +45,41 @@ h2, h3 {
 
 #menu {
     display: none;
+    background-color: transparent;
+    border: none;
+    width: 20%;
+}
+
+#menu:focus {
+    outline: none;
+}
+
+#menu-bar {
+    margin-top: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#menu-bar > li {
+    display: none;
+    width: 30%;
+    height: 50px;
+    border: 1px solid black;
+    background-color:rgb(50, 50, 50);
+}
+
+#menu-bar > li > a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#menu-bar > li > a:hover {
+    color: turquoise;
 }
 
 #nav-links {
@@ -295,8 +330,10 @@ footer > p {
     #menu {
         display: flex;
         height: 100%;
-        justify-content: flex-end;
-        padding-right: 20px;
+        justify-self: flex-end;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
     }
 
     #menu > img {
